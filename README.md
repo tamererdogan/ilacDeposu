@@ -12,9 +12,11 @@ Proje dizininde bulunan **.env** dosyası içerisinde ki **DATABASE_URL=mysql://
 güncellenmeli. (Mysql xampp ile kurulduysa **varsayılan kullanıcı root,şifresi ise boştur**)
 
 Komut satırından proje dizinine gidilip (Backend klasörü içerisine) sırası ile aşağıda ki komutlar çalıştırılmalı.
+#### Kurulum
 - composer install
 - php bin/console doctrine:database:create
 - php bin/console doctrine:migrations:migrate (contuine sorusuna 'y' cevabı girilip devam edilmeli)
+#### Çalıştırma
 - php bin/console server:run
 
 ## Frontend
@@ -23,5 +25,7 @@ Komut satırından proje dizinine gidilip (Backend klasörü içerisine) sıras�
 Linkinden 10.16.1-LTS sürümü indirilip kurulmalı.
 
 Komut satırından proje dizinine geçilip (Frontend klasörü içerisine) aşağıda ki komutlar uygulanmalı.
+#### Kurulum
 - npm install
+#### Çalıştırma
 - npm start
