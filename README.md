@@ -2,17 +2,17 @@
 
 ##### PHP ve Mysql Kurulumu
 - https://www.apachefriends.org/tr/download.html
-Linkinden "7.2.20" versiyonu indirilip kurulmalı ve varsayılan php rotası(**C:\xampp\php**) ortam değişkenlerine eklenmeli.
+Linkinden "7.2.20" versiyonu indirilip kurulmalÄ± ve varsayÄ±lan php rotasÄ±(**C:\xampp\php**) ortam deÄŸiÅŸkenlerine eklenmeli.
 
 ##### Composer Kurulumu
 - https://getcomposer.org/download/
-Linkinden Composer-Setup.exe indirilip kurulmalı.
+Linkinden Composer-Setup.exe indirilip kurulmalÄ±.
 
-Proje dizininde bulunan **.env** dosyası içerisinde ki **DATABASE_URL=mysql://root:@127.0.0.1:3306/medicine** satırı mysql bilgilerine göre
-güncellenmeli. (Mysql xampp ile kurulduysa **varsayılan kullanıcı root,şifresi ise boştur**)
+Proje dizininde bulunan **.env** dosyasÄ± iÃ§erisinde ki **DATABASE_URL=mysql://root:@127.0.0.1:3306/medicine** satÄ±rÄ± mysql bilgilerine gÃ¶re
+gÃ¼ncellenmeli. (Mysql xampp ile kurulduysa **varsayÄ±lan kullanÄ±cÄ± root,ÅŸifresi ise boÅŸtur**)
 
-Komut satırından proje dizinine gidilip (Backend klasörü içerisine) sırası ile aşağıda ki komutlar çalıştırılmalı.
-composer install
+Komut satÄ±rÄ±ndan proje dizinine gidilip (Backend klasÃ¶rÃ¼ iÃ§erisine) sÄ±rasÄ± ile aÅŸaÄŸÄ±da ki komutlar Ã§alÄ±ÅŸtÄ±rÄ±lmalÄ±.
+- composer install
 - php bin/console doctrine:database:create
 - php bin/console doctrine:migrations:migrate
 - php bin/console server:run
@@ -20,8 +20,8 @@ composer install
 ## Frontend
 ##### NodeJS ve NPM Kurulumu
 - https://nodejs.org/en/
-Linkinden 10.16.1-LTS sürümü indirilip kurulmalı.
+Linkinden 10.16.1-LTS sÃ¼rÃ¼mÃ¼ indirilip kurulmalÄ±.
 
-Komut satırından proje dizinine geçilip (Frontend klasörü içerisine) aşağıda ki komutlar uygulanmalı.
+Komut satÄ±rÄ±ndan proje dizinine geÃ§ilip (Frontend klasÃ¶rÃ¼ iÃ§erisine) aÅŸaÄŸÄ±da ki komutlar uygulanmalÄ±.
 - npm install
 - npm start
